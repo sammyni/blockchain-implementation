@@ -6,7 +6,7 @@ class Block {
         this.timestamp = timestamp;
         this.lastHash = lastHash;
         this.hash = hash;
-        this.nonce = nounce;
+        this.nonce = nonce;
         this.data = data;
     }
 
