@@ -7,7 +7,7 @@
     "test": "jest --watchAll",
     "dev-test": "nodemon dev-test",
     "start": "node ./app",
-    "dev": "nodemon ./app"
+    "dev": "NODE_ENV=dev nodemon ./app"
   },
   "repository": {
     "type": "git",

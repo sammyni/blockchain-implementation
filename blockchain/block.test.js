@@ -17,8 +17,18 @@ describe('Block', () => {
         expect(block.lastHash).toEqual(lastBlock.hash);
     });
 
+    // it('generates a hash that matches the difficulty', () => {
+    //     expect(block.hash.substring(0, DIFFICULTY)).toEqual('0'.repeat(DIFFICULTY));
+    //     console.log('Mined Block', block.toString());
+    // });
+    //Remove Hardcoded DIFFICULTY and use dynamic difficulty
+
     it('generates a hash that matches the difficulty', () => {
-        expect(block.hash.substring(0, DIFFICULTY)).toEqual('0'.repeat(DIFFICULTY));
+        expect(block.hash.substring(0, block.difficulty)).toEqual('0'.repeat(block.difficulty));
         console.log('Mined Block', block.toString());
+    });
+
+    it('lowers difficulty for slowly mined blocks', () => {
+        expect(Block.adjustDifficulty(block, block.timestamp+360000))).toEqual(block.difficulty-1);
     });
 });
