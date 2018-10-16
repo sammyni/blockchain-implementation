@@ -1,5 +1,5 @@
 {
-  "name": "demochain",
+  "name": "Sample-Blockchain",
   "version": "1.0.0",
   "description": "Peer-to-Perr Blockchain Implementation",
   "main": "index.js",
@@ -13,7 +13,12 @@
     "type": "git",
     "url": "https://gitlab.com/sammynigwe/sample-blockchain.git"
   },
-  "keywords": ["Blockchain", "Proof-of-work", "Peer-to-Peer", "Cryptocurrency"],
+  "keywords": [
+    "Blockchain",
+    "Proof-of-work",
+    "Peer-to-Peer",
+    "Cryptocurrency"
+  ],
   "author": "Samuel Ndubuisi <samniwebdev@gmail.com>",
   "license": "ISC",
   "devDependencies": {
