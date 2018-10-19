@@ -14,7 +14,7 @@
     "url": "https://gitlab.com/sammynigwe/sample-blockchain.git"
   },
   "jest": {
-    "testEnvironment": "node"  
+    "testEnvironment": "node"
   },
   "keywords": [
     "Blockchain",
